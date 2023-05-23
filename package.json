@@ -1,0 +1,29 @@
+{
+  "name": "react-native-leaflet-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-pavel/react-native-leaflet-bridge.git"
+  },
+  "author": "Pavel Pliuiko",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/leaflet": "^1.9.3",
+    "@types/react": "18.2.6",
+    "@types/react-native": "0.72.0",
+    "@types/uuid": "^9.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/dev-pavel/react-native-leaflet-bridge/issues"
+  },
+  "homepage": "https://github.com/dev-pavel/react-native-leaflet-bridge#readme",
+  "dependencies": {
+    "react-native-webview": "^12.0.2",
+    "uuid": "^9.0.0"
+  }
+}
