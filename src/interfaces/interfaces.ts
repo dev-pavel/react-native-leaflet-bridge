@@ -1,12 +1,31 @@
-import {WebViewProps} from "react-native-webview";
-import * as L from 'leaflet';
+import type { WebViewProps } from 'react-native-webview';
+import type * as L from 'leaflet';
 
 export interface ILeafletWebViewProps extends WebViewProps {
-    mapRef: any
+  mapRef: any;
 }
 
 export interface ILeafletProxy {
-    L: typeof L & {
-        end: void
-    }
+  L: typeof L & {
+    end: void
+  };
+}
+
+//todo: find other way to add .end in types
+declare module 'leaflet' {
+  interface Map {
+    end: Map;
+  }
+
+  interface TileLayer {
+    end: TileLayer;
+  }
+
+  interface Marker {
+    end: Marker;
+  }
+
+  interface Polygon {
+    end: Polygon;
+  }
 }

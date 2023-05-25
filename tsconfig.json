@@ -1,21 +1,28 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "lib": ["es6"],
-    "jsx": "react-native",
-    "declaration": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "*": ["src/*"]
+      "react-native-leaflet-bridge": ["./src/index"]
     },
-    "typeRoots": ["node_modules/@types"]
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "error",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  }
 }
