@@ -1,31 +1,41 @@
-# react-native-leaflet-bridge
+# Website
 
-Test Description
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Installation
+### Installation
 
-```sh
-npm install react-native-leaflet-bridge
+```
+$ yarn
 ```
 
-## Usage
+### Local Development
 
-```js
-import { LeafletBridgeView } from "react-native-leaflet-bridge";
-
-// ...
-
-<LeafletBridgeView color="tomato" />
+```
+$ yarn start
 ```
 
-## Contributing
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+### Build
 
-## License
+```
+$ yarn build
+```
 
-MIT
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
----
+### Deployment
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
