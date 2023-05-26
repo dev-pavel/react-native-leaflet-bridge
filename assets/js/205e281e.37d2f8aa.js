@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_native_leaflet_bridge=self.webpackChunkreact_native_leaflet_bridge||[]).push([[474],{6185:t=>{t.exports=JSON.parse('{"title":"Introduction","slug":"/category/introduction","permalink":"/docs/category/introduction","navigation":{"next":{"title":"Getting Started","permalink":"/docs/introduction/getting-started"}}}')}}]);
